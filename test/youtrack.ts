@@ -29,6 +29,11 @@ describe("Youtrack", () => {
         assert(youtrack.workItems !== null);
     });
 
+    it("instantiates attachments endpoint", () => {
+        const youtrack = new Youtrack(configWithToken);
+        assert(youtrack.workItems !== null);
+    });
+
     describe('login', () => {
 
         describe('with token', () => {
